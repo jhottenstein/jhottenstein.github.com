@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[HottenBlog]]></title>
-  <link href="http://jhottenstein.github.io/atom.xml" rel="self"/>
-  <link href="http://jhottenstein.github.io/"/>
-  <updated>2013-06-04T13:23:42-07:00</updated>
-  <id>http://jhottenstein.github.io/</id>
+  <link href="http://jess.hottenste.in/atom.xml" rel="self"/>
+  <link href="http://jess.hottenste.in/"/>
+  <updated>2013-06-04T13:30:35-07:00</updated>
+  <id>http://jess.hottenste.in/</id>
   <author>
     <name><![CDATA[Jess Hottenstein]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[First Post!]]></title>
-    <link href="http://jhottenstein.github.io/blog/2013/06/04/first-post/"/>
+    <link href="http://jess.hottenste.in/blog/2013/06/04/first-post/"/>
     <updated>2013-06-04T13:15:00-07:00</updated>
-    <id>http://jhottenstein.github.io/blog/2013/06/04/first-post</id>
+    <id>http://jess.hottenste.in/blog/2013/06/04/first-post</id>
     <content type="html"><![CDATA[<p>I like the idea of having bread crumb trail.  Places that I&rsquo;ve been.  Technologies that I struggled with and learned something about.</p>
 
 <p>Thanks to <a href="http://brian.olore.net">bolore</a> for the inspiration.</p>
