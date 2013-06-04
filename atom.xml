@@ -4,7 +4,7 @@
   <title><![CDATA[HottenBlog]]></title>
   <link href="http://jess.hottenste.in/atom.xml" rel="self"/>
   <link href="http://jess.hottenste.in/"/>
-  <updated>2013-06-04T14:05:42-07:00</updated>
+  <updated>2013-06-04T14:30:48-07:00</updated>
   <id>http://jess.hottenste.in/</id>
   <author>
     <name><![CDATA[Jess Hottenstein]]></name>
@@ -12,6 +12,86 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Creating a GitHub Page with Octopress]]></title>
+    <link href="http://jess.hottenste.in/blog/2013/06/04/creating-a-github-page-with-octopress/"/>
+    <updated>2013-06-04T14:25:00-07:00</updated>
+    <id>http://jess.hottenste.in/blog/2013/06/04/creating-a-github-page-with-octopress</id>
+    <content type="html"><![CDATA[<ul>
+<li>Ruby 1.9.3
+
+<ul>
+<li>Get xcode (or Xcode command line tools)</li>
+<li><code>\curl -L https://get.rvm.io | bash -s</code></li>
+<li><code>rvm autolibs homebrew</code></li>
+<li><code>rvm requirements</code></li>
+<li><code>rvm install 1.9.3</code></li>
+</ul>
+</li>
+<li><a href="http://octopress.org/docs/setup/" title="Install">Install Octopress</a>
+
+<ul>
+<li>I had line ending issues with this application</li>
+<li><code>git clone git://github.com/imathis/octopress.git octopress</code></li>
+<li><code>cd octopress</code>    # If you use RVM, You&rsquo;ll be asked if you trust the .rvmrc file (say yes).</li>
+<li><code>ruby --version</code>  # Should report Ruby 1.9.3</li>
+<li><code>bundle install</code></li>
+<li><code>rake install</code></li>
+</ul>
+</li>
+<li><a href="http://octopress.org/docs/deploying/github/" title="Deploy">Deploy to Github Pages</a>
+
+<ul>
+<li>Create a new Github repository and name the repository with your user name or organization name <code>username.github.io</code></li>
+<li><code>rake setup_github_pages</code> &ndash; use the git protocol for the remote url
+
+<ul>
+<li>This creates a crazy structure
+
+<ul>
+<li>_deploy &ndash;> master</li>
+<li>everything else &ndash;> source</li>
+<li>public &ndash;> ignored (generated)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Fix the tracking branch &ndash; <code>git branch --set-upstream source origin/source</code></li>
+</ul>
+</li>
+<li><a href="http://octopress.org/docs/configuring/">Configure Octopress</a>
+
+<ul>
+<li>Modify _config.yml
+
+<ul>
+<li>name, title, etc</li>
+<li>Third party &ndash; github, twitter, etc.</li>
+</ul>
+</li>
+<li>regenerate and redeploy- <code>rake generate &amp;&amp; rake deploy</code></li>
+</ul>
+</li>
+<li><a href="http://octopress.org/docs/blogging/">Post!</a>
+
+<ul>
+<li><code>rake new_post</code></li>
+<li>Edit the post created
+
+<ul>
+<li>Add some categories</li>
+<li>Write the post &ndash; Using <a href="http://five.squarespace.com/display/ShowHelp?section=Markdown">Markdown</a></li>
+</ul>
+</li>
+<li>Check it out &ndash; <code>rake preview</code></li>
+<li>Publish! &ndash; <code>rake deploy</code></li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First Post!]]></title>

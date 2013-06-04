@@ -5,11 +5,15 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Meta - HottenBlog</title>
+  <title>Creating a GitHub Page with Octopress - HottenBlog</title>
   <meta name="author" content="Jess Hottenstein">
 
   
-  <meta name="description" content="Category: Meta">
+  <meta name="description" content="Ruby 1.9.3 Get xcode (or Xcode command line tools)
+\curl -L https://get.rvm.io | bash -s
+rvm autolibs homebrew
+rvm requirements
+rvm install 1.9.3 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jess.hottenste.inblog/categories/meta">
+  <link rel="canonical" href="http://jess.hottenste.in/blog/2013/06/04/creating-a-github-page-with-octopress">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="HottenBlog" type="application/atom+xml">
@@ -64,35 +68,157 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Meta</h1>
+    
+      <h1 class="entry-title">Creating a GitHub Page With Octopress</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T14:25:00-07:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><ul>
+<li>Ruby 1.9.3
 
-  
-  <h2>2013</h2>
+<ul>
+<li>Get xcode (or Xcode command line tools)</li>
+<li><code>\curl -L https://get.rvm.io | bash -s</code></li>
+<li><code>rvm autolibs homebrew</code></li>
+<li><code>rvm requirements</code></li>
+<li><code>rvm install 1.9.3</code></li>
+</ul>
+</li>
+<li><a href="http://octopress.org/docs/setup/" title="Install">Install Octopress</a>
 
-<article>
-  
-<h1><a href="/blog/2013/06/04/first-post/">First Post!</a></h1>
-<time datetime="2013-06-04T13:15:00-07:00" pubdate><span class='month'>Jun</span> <span class='day'>04</span> <span class='year'>2013</span></time>
+<ul>
+<li>I had line ending issues with this application</li>
+<li><code>git clone git://github.com/imathis/octopress.git octopress</code></li>
+<li><code>cd octopress</code>    # If you use RVM, You&rsquo;ll be asked if you trust the .rvmrc file (say yes).</li>
+<li><code>ruby --version</code>  # Should report Ruby 1.9.3</li>
+<li><code>bundle install</code></li>
+<li><code>rake install</code></li>
+</ul>
+</li>
+<li><a href="http://octopress.org/docs/deploying/github/" title="Deploy">Deploy to Github Pages</a>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/meta/'>Meta</a>, <a class='category' href='/blog/categories/octopress/'>Octopress</a></span>
-</footer>
+<ul>
+<li>Create a new Github repository and name the repository with your user name or organization name <code>username.github.io</code></li>
+<li><code>rake setup_github_pages</code> &ndash; use the git protocol for the remote url
 
+<ul>
+<li>This creates a crazy structure
 
-</article>
+<ul>
+<li>_deploy &ndash;> master</li>
+<li>everything else &ndash;> source</li>
+<li>public &ndash;> ignored (generated)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Fix the tracking branch &ndash; <code>git branch --set-upstream source origin/source</code></li>
+</ul>
+</li>
+<li><a href="http://octopress.org/docs/configuring/">Configure Octopress</a>
+
+<ul>
+<li>Modify _config.yml
+
+<ul>
+<li>name, title, etc</li>
+<li>Third party &ndash; github, twitter, etc.</li>
+</ul>
+</li>
+<li>regenerate and redeploy- <code>rake generate &amp;&amp; rake deploy</code></li>
+</ul>
+</li>
+<li><a href="http://octopress.org/docs/blogging/">Post!</a>
+
+<ul>
+<li><code>rake new_post</code></li>
+<li>Edit the post created
+
+<ul>
+<li>Add some categories</li>
+<li>Write the post &ndash; Using <a href="http://five.squarespace.com/display/ShowHelp?section=Markdown">Markdown</a></li>
+</ul>
+</li>
+<li>Check it out &ndash; <code>rake preview</code></li>
+<li>Publish! &ndash; <code>rake deploy</code></li>
+</ul>
+</li>
+</ul>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Jess Hottenstein</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T14:25:00-07:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jess.hottenste.in/blog/2013/06/04/creating-a-github-page-with-octopress/" data-via="jesshottenstein" data-counturl="http://jess.hottenste.in/blog/2013/06/04/creating-a-github-page-with-octopress/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/06/04/first-post/" title="Previous Post: First Post!">&laquo; First Post!</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
@@ -102,6 +228,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/06/04/creating-a-github-page-with-octopress/">Creating a GitHub Page With Octopress</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/06/04/first-post/">First Post!</a>
