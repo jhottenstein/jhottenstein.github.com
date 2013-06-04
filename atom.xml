@@ -4,7 +4,7 @@
   <title><![CDATA[HottenBlog]]></title>
   <link href="http://jess.hottenste.in/atom.xml" rel="self"/>
   <link href="http://jess.hottenste.in/"/>
-  <updated>2013-06-04T14:31:42-07:00</updated>
+  <updated>2013-06-04T15:06:28-07:00</updated>
   <id>http://jess.hottenste.in/</id>
   <author>
     <name><![CDATA[Jess Hottenstein]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fluent Conference Talks]]></title>
+    <link href="http://jess.hottenste.in/blog/2013/06/04/fluent-conference-talks/"/>
+    <updated>2013-06-04T14:42:00-07:00</updated>
+    <id>http://jess.hottenste.in/blog/2013/06/04/fluent-conference-talks</id>
+    <content type="html"><![CDATA[<p>I attended the <a href="http://fluentconf.com/fluent2013">Fluent Conference</a> in SF this past week and I will be writing up some of the better talks.  For posterity, here are all the talks that I saw or wanted to see.</p>
+
+<h4>Talks that I attended</h4>
+
+<ul>
+<li>Introduction to Twitter Bootstrap</li>
+<li>Building a Webapp Step-by-Step</li>
+<li>Wednesday Keynotes</li>
+<li>Implementing Hypermedia Clients: It’s Not Rocket Science</li>
+<li>Build Big Data Apps with the Web Technology You Know and Love</li>
+<li>Flow Control with Promises</li>
+<li>AngularJS &ndash; HTML enhanced for Web-apps</li>
+<li>Thursday Keynotes</li>
+<li>1.21 gigawatts: ChromeApps with AngularJS and Node</li>
+<li>Break Out Of The Browser With HTML5</li>
+<li>How To: Make Fast Design-Decisions as a Developer</li>
+<li>More Than Good Design</li>
+</ul>
+
+
+<h4>Talks that I was interested in (but didn&rsquo;t see)</h4>
+
+<ul>
+<li>Secrets of Awesome API Design</li>
+<li>Web Components: A Tectonic Shift for the Web Platform</li>
+<li>&ldquo;this&rdquo; in JavaScript : How It Really Works</li>
+<li>Classical Inheritance is Obsolete: How to Think in Prototypal OO</li>
+<li>Battle of the HTML5 Hackers</li>
+<li>Go Node Without Code</li>
+<li>Improving JavaScript Code Quality: Strategies and Tools</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Creating a GitHub Page with Octopress]]></title>
